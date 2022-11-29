@@ -10,6 +10,8 @@ const NotFoundError = require('./errors/not-found-err');
 const { requestLogger, errorLogger } = require('./middlewares/logger');
 const routers = require('./routes/index.js');
 
+const bcrypt = require('bcryptjs');
+
 const { PORT = 3001 } = process.env;
 const app = express();
 
@@ -36,4 +38,8 @@ app.use(centarlErrors);
 
 app.listen(PORT, () => {
   console.log(`App listening on port ${PORT}`);
+  /*bcrypt.hash("Dflgtnrlshdbrvtvsksh!sssaaDjJfG846652926420", 10)
+    .then((hash) => { 
+      console.log(hash)
+    });*/
 });
