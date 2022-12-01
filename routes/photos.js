@@ -1,10 +1,9 @@
 const router = require('express').Router();
 const { celebrate, Joi } = require('celebrate');
 const {
-  getPhotos, createPhoto, deletePhoto,
+  createPhoto, deletePhoto,
 } = require('../controllers/photos');
 
-router.get('/', getPhotos);
 router.post('/', celebrate({
   body: Joi.object().keys({
     link: Joi.string().required(),

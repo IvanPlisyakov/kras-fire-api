@@ -1,10 +1,8 @@
 const router = require('express').Router();
 const { celebrate, Joi } = require('celebrate');
 const {
-  getProducts, createProduct, deleteProduct, changeProduct
+  createProduct, deleteProduct, changeProduct
 } = require('../controllers/products');
-
-router.get('/', getProducts);
 
 router.post('/', celebrate({
   body: Joi.object().keys({
