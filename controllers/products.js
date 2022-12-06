@@ -10,12 +10,13 @@ const getProducts = (req, res, next) => {
 
 const createProduct = (req, res, next) => {
   const {
-    name, category, description, price, video, mainImage, discount
+    name, category, partNumber, description, price, video, mainImage, discount
   } = req.body;
 
   Product.create({
     name, 
     category,
+    partNumber,
     description,
     price, 
     video,
