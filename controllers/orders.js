@@ -21,7 +21,7 @@ const sendOrder = async (req, res, next) => {
   // send mail with defined transport object
   return transporter.sendMail({
     from: '"Kras Fire 👻" <plisyakov.ivan@mail.ru>', // sender address
-    to: "plisyakov.ivan@mail.ru", // list of receivers
+    to: "favorit_relax_tourism@mail.ru", // list of receivers
     subject: "Заказ", // Subject line
     text: text, // plain text body
   })
