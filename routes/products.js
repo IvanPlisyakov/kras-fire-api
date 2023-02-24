@@ -8,6 +8,7 @@ router.post('/', celebrate({
   body: Joi.object().keys({
     name: Joi.string().required(),
     category: Joi.string().required(),
+    partNumber: Joi.string().required(),
     description: Joi.string().required(),
     price: Joi.number().required(),
     video: Joi.string().required(),

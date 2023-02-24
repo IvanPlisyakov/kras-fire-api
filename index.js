@@ -15,7 +15,7 @@ const bcrypt = require('bcryptjs');
 const { PORT = 3001 } = process.env;
 const app = express();
 
-mongoose.connect('mongodb://localhost:27017/kras-fire', {//'mongodb://localhost:27017' //'mongodb+srv://IvanPlisyakov:actiVision12@cluster-mesto.ndo6c.mongodb.net/movies?retryWrites=true&w=majority'
+mongoose.connect('mongodb+srv://nastya:lenovo12@kras-fire.gq735ul.mongodb.net/test', {//'mongodb://localhost:27017' //'mongodb+srv://IvanPlisyakov:actiVision12@cluster-mesto.ndo6c.mongodb.net/movies?retryWrites=true&w=majority'
   useUnifiedTopology: true,
   useNewUrlParser: true,
   useFindAndModify: false,
